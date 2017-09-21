@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">PaginasAmarrillasApp</string>
+    <string name="buscar">Encontrar</string>
+    <string name="cerca_de_mi">Cerca de mi</string>
+    <string name="ajuste">Ajuste</string>
+    <string name="r_aumentada">R. Aumentada</string>
+    <string name="d_nde">DÓNDE:</string>
+</resources>

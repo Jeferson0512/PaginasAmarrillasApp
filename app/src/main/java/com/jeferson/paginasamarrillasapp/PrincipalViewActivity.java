@@ -10,6 +10,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
+import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -20,7 +21,7 @@ public class PrincipalViewActivity extends AppCompatActivity {
     private AutoCompleteTextView searchView;
     String [] viewBuscador = {"Restaurante","Colegios","Institutos"};
     ArrayAdapter<String> adapter;
-    private ListView list;
+    private EditText list;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

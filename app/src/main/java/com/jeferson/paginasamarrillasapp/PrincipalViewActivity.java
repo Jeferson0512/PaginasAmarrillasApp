@@ -21,7 +21,7 @@ public class PrincipalViewActivity extends AppCompatActivity {
     private AutoCompleteTextView searchView;
     String [] viewBuscador = {"Restaurante","Colegios","Institutos"};
     ArrayAdapter<String> adapter;
-    private EditText list;
+    private ListView list;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

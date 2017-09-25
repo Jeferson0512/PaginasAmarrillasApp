@@ -13,11 +13,14 @@ import android.widget.AutoCompleteTextView;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import java.util.List;
+
 public class PrincipalViewActivity extends AppCompatActivity {
 
     private AutoCompleteTextView searchView;
     String [] viewBuscador = {"Restaurante","Colegios","Institutos"};
     ArrayAdapter<String> adapter;
+    private ListView list;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

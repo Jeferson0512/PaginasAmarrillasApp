@@ -6,11 +6,49 @@
     android:layout_height="match_parent"
     tools:context="com.jeferson.paginasamarrillasapp.PrincipalViewActivity">
 
+    <!--/android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:minHeight="?attr/actionBarSize"
+        app:theme="@style/Base.ThemeOverlay.AppCompat.ActionBar"-->
+
     <LinearLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/icono"
+            android:visibility="visible"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="Paginas amarillas"
+            android:id="@+id/toolbar_title"
+            android:gravity="center"
+            android:hint="Buscar..."/>
+    </LinearLayout>
+    <!--/android.support.v7.widget.Toolbar-->
+
+    <LinearLayout
+        android:id="@+id/segundo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="15dp">
+        android:padding="15dp"
+        android:layout_below="@+id/toolbar">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -23,10 +61,12 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-            <SearchView
+            <AutoCompleteTextView
+                android:id="@+id/buscador"
                 android:layout_width="match_parent"
                 android:layout_height="65dp"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:queryHint="Buscar..."/>
 
             <Button
                 android:layout_width="60dp"

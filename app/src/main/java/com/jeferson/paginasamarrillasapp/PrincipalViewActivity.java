@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.support.v7.widget.SearchView;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.EditText;
@@ -17,6 +18,7 @@ import android.widget.Toast;
 import java.util.List;
 
 public class PrincipalViewActivity extends AppCompatActivity {
+
 
     private AutoCompleteTextView searchView;
     String [] viewBuscador = {"Restaurante","Colegios","Institutos"};
@@ -33,13 +35,13 @@ public class PrincipalViewActivity extends AppCompatActivity {
         adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,viewBuscador);
         searchView.setAdapter(adapter);
 
-        searchView.setOnClickListener(new View.OnClickListener() {
+        searchView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Intent intent = new Intent(PrincipalViewActivity.this, BuscarActivity.class);
                 intent.putExtra("buscado",searchView.getText().toString());
                 startActivity(intent);
-
+                finish();
             }
         });
 

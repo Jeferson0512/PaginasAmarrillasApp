@@ -1,27 +1,26 @@
 package com.jeferson.paginasamarrillasapp;
 
 /**
- * Created by Usuario on 25/09/2017.
+ * Created by Usuario on 28/09/2017.
  */
 
-public class Data {
-
-    private String titulo, direccion, telefono;
+public class Restaurante {
+    private String titutlo, direccion, telefono;
     private int imagen;
 
-    public Data(String titulo, String direccion, String telefono, int imagen) {
-        this.titulo = titulo;
+    public Restaurante(String titutlo, String direccion, String telefono, int imagen) {
+        this.titutlo = titutlo;
         this.direccion = direccion;
         this.telefono = telefono;
         this.imagen = imagen;
     }
 
-    public String getTitulo() {
-        return titulo;
+    public String getTitutlo() {
+        return titutlo;
     }
 
-    public void setTitulo(String titulo) {
-        this.titulo = titulo;
+    public void setTitutlo(String titutlo) {
+        this.titutlo = titutlo;
     }
 
     public String getDireccion() {

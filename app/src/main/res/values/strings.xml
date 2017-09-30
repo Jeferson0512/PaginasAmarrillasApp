@@ -5,4 +5,6 @@
     <string name="ajuste">Ajuste</string>
     <string name="r_aumentada">R. Aumentada</string>
     <string name="d_nde">DÓNDE:</string>
+    <string name="direccion">direccion</string>
+    <string name="titulo_informacion">Informacion:</string>
 </resources>

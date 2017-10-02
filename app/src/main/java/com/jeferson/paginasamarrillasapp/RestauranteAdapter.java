@@ -32,15 +32,12 @@ public class RestauranteAdapter extends ArrayAdapter<Restaurante>{
         ImageView imagen = (ImageView) item.findViewById(R.id.imgAnimal);
         imagen.setImageResource(restaurantes.get(position).getImagen());
 
-        // Recogemos el TextView para mostrar el nombre y establecemos el
-        // nombre.
         TextView nombre = (TextView) item.findViewById(R.id.tvContent);
         nombre.setText(restaurantes.get(position).getTelefono());
 
-        // Recogemos el TextView para mostrar el n�mero de celda y lo
-        // establecemos.
         TextView numCelda = (TextView) item.findViewById(R.id.tvField);
         numCelda.setText(restaurantes.get(position).getTitutlo());
+
         //String.valueOf(position)
 
         TextView direccion = (TextView)item.findViewById(R.id.direccion);

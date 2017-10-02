@@ -20,13 +20,6 @@
         <activity android:name=".BuscarActivity" />
         <activity android:name=".ListFirstFragment" />
         <activity android:name=".ViewSecondFragment" />
-        <activity android:name=".main">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
         <activity android:name=".FirstFragment" />
         <activity android:name=".SecondFragment" />
         <activity android:name=".Informacion"></activity>
